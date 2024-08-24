@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodecrafters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <section class="sampark">
+    <header>
+        <nav>
+            <div class="logo">
+                KodeCrafters.co
+            </div>
+            <div class="menu" id="menu">
+                <i class='bx bx-x' id="cross" onclick="hidemenu()"></i>
+            <ul>
+              <li><a href="index.html">Home</a> </li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li> 
+              <li> <a href="contact.html">Contact</a></li>
+            </ul> 
+        </div>
+        <i class='bx bx-menu' id="burger" onclick="showmenu()"></i>
+        </nav>
+
+        <h1>Contact Us</h1>
+        <h2>"Contact us today—your gateway to exceptional web solutions awaits."</h2>
+        
+    </header>
+</section>
+<!--contact us-->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6882.741879566143!2d77.91835692339305!3d30.39721592648013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1723965302814!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="samparkus">
+    <div class="row">
+        <div class="sampark-cols">
+                <div>
+                    <i class='bx bxs-home'></i>
+                    <span>
+                        <h5>Kothari Palace, Bhauwala</h5>
+                        <p>Bhauwala,Dehradun</p>
+
+                       
+                    </span>
+                </div>
+                <div>
+                    <i class='bx bx-phone'></i>
+                    <span>
+                        <h5>+91-8809327135</h5>
+                        <p>Monaday-Friday, 10AM-6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class='bx bx-envelope'></i>
+                    <span>
+                        <h5>kodecrafters2024@gmail.com</h5>
+                        <p>Email for any query</p>
+                    </span>
+                </div>
+        </div>
+        <br>
+        <div class="sampark-col">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="569bb10c-6961-4d9c-a996-7cc18825a793">
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Email Address" required>
+                <input type="text" name="Subject" placeholder="Enter Your subject" required>
+                <textarea rows="8" placeholder="Message" name="message" required></textarea>
+                <button type="submit"class="herobtn marine-btn" >Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+<!--footer-->
+<section class="footer">
+    <p>Thank you for reaching us</p>
+    <div class="icons">
+        <i class='bx bxl-facebook'></i>
+        <i class='bx bxl-instagram'></i>
+        <i class='bx bxl-twitter'></i>
+        <i class='bx bxl-linkedin'></i>
+    </div>
+    <p>Made with <i class='bx bx-heart'></i> by KodeCrafters.co</p>
+</section>
+
+    <!--js for menu click-->
+    <script>
+        var menu = document.getElementById("menu")
+        function showmenu(){
+            menu.style.right="0";
+        }
+        function hidemenu(){
+            menu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

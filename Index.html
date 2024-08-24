@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodecrafters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                KodeCrafters.co
+            </div>
+            <div class="menu" id="menu">
+                <i class='bx bx-x' id="cross" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li> 
+                <li> <a href="contact.html">Contact</a></li>
+            </ul> 
+        </div>
+        <i class='bx bx-menu' id="burger" onclick="showmenu()"></i>
+        </nav>
+        <section class="main" >
+            <h1>KodeCrafters co. ltd.</h1>
+            <br>
+            <a href="contact.html">Contact</a>
+        </section>
+        
+    </header>
+<!--Services-->
+<section class="service">
+    <h2>Services We Offer</h2>
+    <p>Our services include web design, development, hosting, e-commerce solutions, SEO, and ongoing maintenance—crafted for your success.</p>
+    <div class="row">  
+        <div class="service-details">
+            <h3>Dynamic Website</h3>
+            <p>We create dynamic websites using advanced technologies, offering responsive, interactive, and user-focused experiences. Our solutions adapt to real-time data and user behavior, ensuring seamless performance and engagement across all devices. Your website will be both visually stunning and highly functional.</p>
+            <a href="services.html">More Services</a>
+        </div>    
+            <div class="service-details">
+                <h3>Security</h3>
+                <p>We prioritize security by implementing robust measures like SSL encryption, regular updates, firewalls, and vulnerability assessments. Our approach ensures your website is protected against threats, safeguarding your data and providing a secure experience for your users.</p><br>
+                <a href="services.html">More Services</a>
+            </div>
+            <div class="service-details">
+                <h3>Hosting</h3>
+                <p>We offer reliable hosting solutions tailored to your website's needs, ensuring optimal performance, uptime, and speed. Our hosting includes regular backups, scalability options, and 24/7 support, giving you peace of mind with a secure and smoothly running website.</p><br><br>
+                <a href="services.html">More Services</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--About us-->
+<section class="AboutUs">
+    <h2>About Us</h2>
+    <p>At KodeCrafters.co, we are passionate about crafting exceptional web solutions that empower businesses to thrive in the <br>digital world. As a dynamic startup, we specialize in delivering top-notch web development, design, and digital transformation services tailored to meet the unique needs of our clients.</p><br>
+    <a href="about.html">Read More</a>
+</section>
+   <section class="detail">
+    <div class="row">
+        <div class="about">
+            <h2>Our vision</h2>
+            <p>At KodeCrafters.co, our vision is to empower businesses through innovative web solutions that drive growth and success. We aim to set the standard in web design and development by combining creativity with technology, ensuring every project exceeds expectations. Our goal is to create impactful digital experiences that inspire, engage, and connect.</p>
+            <a href="about.html">Explore More</a>
+        </div>
+        <div class="about">
+            <img src="eduford_img/about.jpg" alt="">
+        </div>
+    </div>
+</section>
+<!--contact us-->
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>At KodeCrafters.co, we're here to help you every step of the way. Whether you have questions, need support, or want to discuss your next project, our team is ready to assist. Reach out to us via email, phone, or through our contact form, and let's start building your digital future together.</p><br>
+    <a href="contact.html">Contact Us</a>
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contactdetails">
+            <div>
+                <i class='bx bx-home'></i>
+                <span>
+                    <h5> XYZ road, Dehradun </h5>
+                       <p>Bhauwala, Dehradun</p> 
+                   
+                </span>
+            </div>
+                <br>
+                <div>
+                    <i class='bx bxs-phone-call'></i>
+                    <span>
+                        <h5> +91-8809327135</h5>
+                           <p>Monday-Friday,10AM-6PM </p> 
+                    </span>
+                </div>
+                <div>
+                    <i class='bx bx-envelope'></i>
+                    <span>
+                        <h5>kodecraftersco2024@gmail.com</h5>
+                           <p>Email us for query </p> 
+                    </span>
+                </div>
+                
+            
+        </div>
+    
+    </div>
+</section>
+<!--footer-->
+<section class="footer">
+    <p>Thank you for reaching us</p>
+    <div class="icons">
+        <i class='bx bxl-facebook'></i>
+        <i class='bx bxl-instagram'></i>
+        <i class='bx bxl-twitter'></i>
+        <i class='bx bxl-linkedin'></i>
+    </div>
+    <p>Made with <i class='bx bx-heart'></i> by KodeCrafters.co</p>
+</section>
+
+    <!--js for menu click-->
+    <script>
+        var menu = document.getElementById("menu")
+        function showmenu(){
+            menu.style.right="0";
+        }
+        function hidemenu(){
+            menu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodecrafters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <section class="serve">
+        <header>
+            <nav>
+                <div class="logo">
+                    KodeCrafters.co
+                </div>
+                <div class="menu" id="menu">
+                    <i class='bx bx-x' id="cross" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li> <a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class='bx bx-menu' id="burger" onclick="showmenu()"></i>
+            </nav>
+            <h1>Our Services</h1>
+            <h2>"Crafting innovative web solutions that drive your digital success forward."</h2>
+
+        </header>
+    </section>
+    <!--Services-->
+    <section class="service">
+        <h2>Services We Offer</h2>
+        <p>Our services include web design, development, hosting, e-commerce solutions, SEO, and ongoing
+            maintenance—crafted for your success.</p>
+        <div class="row">
+            <div class="service-details">
+                <h3>Dynamic Website</h3>
+                <p>We create dynamic websites using advanced technologies, offering responsive, interactive, and
+                    user-focused experiences. Our solutions adapt to real-time data and user behavior, ensuring seamless
+                    performance and engagement across all devices. Your website will be both visually stunning and
+                    highly functional.</p>
+
+            </div>
+            <div class="service-details">
+                <h3>Security</h3>
+                <p>We prioritize security by implementing robust measures like SSL encryption, regular updates,
+                    firewalls, and vulnerability assessments. Our approach ensures your website is protected against
+                    threats, safeguarding your data and providing a secure experience for your users.</p><br>
+
+            </div>
+            <div class="service-details">
+                <h3>Hosting</h3>
+                <p>We offer reliable hosting solutions tailored to your website's needs, ensuring optimal performance,
+                    uptime, and speed. Our hosting includes regular backups, scalability options, and 24/7 support,
+                    giving you peace of mind with a secure and smoothly running website.</p><br><br>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="moreservice">
+        <a href="contact.html" class="moreservice">More Services</a>
+    </section>
+    <!--footer-->
+    <section class="footer">
+        <p>Thank you for reaching us</p>
+        <div class="icons">
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-twitter'></i>
+            <i class='bx bxl-linkedin'></i>
+        </div>
+        <p>Made with <i class='bx bx-heart'></i> by KodeCrafters.co</p>
+    </section>
+
+    <!--js for menu click-->
+    <script>
+        var menu = document.getElementById("menu")
+        function showmenu() {
+            menu.style.right = "0";
+        }
+        function hidemenu() {
+            menu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
